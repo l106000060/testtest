@@ -1,0 +1,115 @@
+/* text-style */
+
+.d1 {
+  @include font-style($neutral-white, $fs-d1, $fw-bold, $lh-tight);
+}
+
+.d2 {
+  @include font-style($neutral-900, $fs-d2, $fw-bold, $lh-tight);
+}
+
+.d2-white {
+  @include font-style($neutral-white, $fs-d2, $fw-bold, $lh-tight);
+}
+
+.h1 {
+  @include font-style($neutral-white, $fs-h1, $fw-bold, $lh-tight);
+}
+
+.h1-primary-300 {
+  @include font-style($primary-300, $fs-h1, $fw-bold, $lh-tight);
+}
+
+.h2 {
+  @include font-style($neutral-900, $fs-h2, $fw-bold, $lh-tight);
+}
+
+.h2-neutral-white {
+  @include font-style($neutral-white, $fs-h2, $fw-bold, $lh-tight);
+}
+
+.h3 {
+  @include font-style($neutral-white, $fs-h3, $fw-bold, $lh-tight);
+}
+
+.h3-neutral-900 {
+  @include font-style($neutral-900, $fs-h3, $fw-bold, $lh-tight);
+}
+
+.h4 {
+  @include font-style($neutral-900, $fs-h4, $fw-bold, $lh-tight);
+}
+
+.h4-neutral-white {
+  @include font-style($neutral-white, $fs-h4, $fw-bold, $lh-tight);
+}
+
+.h5 {
+  @include font-style($primary-400, $fs-h5, $fw-bold, $lh-tight);
+}
+
+.h5-neutral {
+  @include font-style($neutral-900, $fs-h5, $fw-bold, $lh-tight);
+}
+
+.h5-neutral-white {
+  @include font-style($neutral-white, $fs-h5, $fw-bold, $lh-tight);
+}
+
+.h6 {
+  @include font-style($neutral-900, $fs-h6, $fw-bold, $lh-tight);
+}
+
+.lbl-md-primary-400 {
+  @include font-style($primary-400, null, $fw-medium, null);
+}
+
+.lbl-md-neutral {
+  @include font-style(null, null, $fw-medium, null);
+}
+
+.lbl-md-neutral-600 {
+  @include font-style($neutral-600, null, $fw-medium, null);
+}
+
+.lbl-md-neutral-900 {
+  @include font-style($neutral-900, $fs-h6, $fw-medium, null);
+}
+
+.lbl-sm-neutral {
+  @include font-style($primary-400, $fs-body-sm, $fw-medium, null);
+}
+
+.txt-neutral-300 {
+  @include font-style($neutral-300, null, $fw-bold, null);
+}
+
+.danger-300 {
+  @include font-style($danger-300, $fs-body-sm, null, null);
+}
+
+.p-md {
+  @include font-style($neutral-500, $fs-body-sm, $fw-regular, null);
+}
+
+.p-md-neutral-900 {
+  @include font-style($neutral-900, null, $fw-regular, null);
+}
+
+.p-md-neutral-600 {
+  @include font-style($neutral-600, null, $fw-regular, null);
+}
+
+.p-sm-neutral-500 {
+  @include font-style($neutral-500, null, $fw-regular, null);
+}
+
+.p-lg {
+  font-size: $fs-h5;
+  color: $neutral-500;
+  font-weight: $fw-medium;
+}
+
+.text-neutral-900 {
+  color: $neutral-900;
+}

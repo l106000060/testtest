@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: $neutral-900;
+  font-family: $font-family;
+  line-height: $lh-normal;
+  letter-spacing: 0.05em;
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}

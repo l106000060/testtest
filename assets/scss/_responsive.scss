@@ -1,0 +1,292 @@
+@media (max-width: 1200px) {
+  .col-xl {
+    @include col-width(6);
+  }
+
+  .mb-xl-3 {
+    @include margin(mb, 3);
+  }
+
+  .px-xl-1-5 {
+    @include padding(px, 1-5);
+  }
+
+  .h6-xl-neutral-white {
+    @include font-style($neutral-white, $fs-h6, $fw-bold, $lh-tight);
+  }
+
+  .col-xl-12 {
+    @include col-width(12);
+  }
+
+  .min-lx-width {
+    min-width: 170px;
+  }
+
+  .max-lx-width {
+    max-width: 306px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ms-sm-6 {
+    @include margin(ms, 6);
+  }
+
+  .me-sm-2 {
+    @include margin(me, 2);
+  }
+
+  .pt-sm-3 {
+    @include padding(pt, 3);
+  }
+
+  .pt-sm-6 {
+    @include padding(pt, 6);
+  }
+
+  .ps-sm-3 {
+    @include padding(ps, 3);
+  }
+
+  .px-sm-1-5 {
+    @include padding(px, 1-5);
+  }
+
+  .px-sm-2 {
+    @include padding(px, 2);
+  }
+
+  .px-sm-3 {
+    @include padding(px, 3);
+  }
+
+  .py-sm-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .py-sm-3 {
+    @include padding(py, 3);
+  }
+
+  .py-sm-4 {
+    @include padding(py, 4);
+  }
+
+  .py-sm-6 {
+    @include padding(py, 6);
+  }
+
+  .py-sm-10 {
+    @include padding(py, 10);
+  }
+
+  .py-sm-15p5 {
+    @include padding(py, 15p5);
+  }
+
+  .py-sm-16 {
+    @include padding(py, 16);
+  }
+
+  .py-sm-38-75 {
+    @include padding(py, 38-75);
+  }
+
+  .px-sm-2 {
+    @include padding(px, 2);
+  }
+
+  .px-sm-6 {
+    @include padding(px, 6);
+  }
+
+  .p-sm-8 {
+    @include padding(p, 8);
+  }
+
+  /* display */
+
+  .d-sm-none {
+    display: none;
+  }
+
+  .d-sm-flex {
+    display: flex;
+  }
+
+  .d-sm-block {
+    display: block;
+  }
+
+  .pb-sm-0 {
+    padding-bottom: 0px;
+  }
+
+  .px-sm-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .px-sm-1-5 {
+    @include padding(px, 1-5);
+  }
+
+  .px-sm-20p5 {
+    @include padding(px, 20p5);
+  }
+
+  .py-sm-8 {
+    @include padding(py, 8);
+  }
+
+  .py-sm-10 {
+    @include padding(py, 10);
+  }
+
+  .p-sm-3 {
+    @include padding(p, 3);
+  }
+
+  .p-sm-6 {
+    @include padding(p, 6);
+  }
+
+  // margin
+
+  .mb-sm-0 {
+    margin-bottom: 0px;
+  }
+
+  .mb-sm-2 {
+    @include margin(mb, 2);
+  }
+
+  .mb-sm-3 {
+    @include margin(mb, 3);
+  }
+
+  .mb-sm-4 {
+    @include margin(mb, 4);
+  }
+
+  .mb-sm-5-5 {
+    @include margin(mb, 5-5);
+  }
+
+  .mb-sm-6 {
+    @include margin(mb, 6);
+  }
+
+  .mb-sm-8 {
+    @include margin(mb, 8);
+  }
+
+  .mb-sm-11 {
+    @include margin(mb, 11);
+  }
+
+  .mb-sm-0 {
+    margin-bottom: 0px;
+  }
+
+  .me-sm-0 {
+    margin-right: 0px;
+  }
+
+  .row-sm-mx-1--5 {
+    margin-right: -1.5rem;
+    margin-right: -1.5rem;
+  }
+
+  .hero-sm-header {
+    background-image: url("../images/banner-sm.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .d2-sm {
+    @include font-style($neutral-900, $fs-h2, $fw-bold, $lh-tight);
+  }
+
+  .h2-sm-neutral-white {
+    @include font-style($neutral-white, $fs-h2, $fw-bold, $lh-tight);
+  }
+
+  .h3-sm-primary-300 {
+    @include font-style($primary-300, $fs-h3, $fw-bold, $lh-tight);
+  }
+
+  .h4-sm {
+    @include font-style($neutral-900, $fs-h4, $fw-bold, $lh-tight);
+  }
+
+  .h5-sm-neutral {
+    @include font-style($neutral-900, $fs-h5, $fw-bold, $lh-tight);
+  }
+
+  .h5-sm-neutral-white {
+    @include font-style($neutral-white, $fs-h5, $fw-bold, $lh-tight);
+  }
+
+  .h6-sm {
+    @include font-style($neutral-900, $fs-h6, $fw-bold, $lh-tight);
+  }
+
+  .h6-sm-primary-400 {
+    @include font-style($primary-400, $fs-h6, $fw-bold, $lh-tight);
+  }
+
+  .p-sm-md {
+    @include font-style($neutral-500, $fs-h6, $fw-regular, null);
+  }
+
+  .scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  // 網格系統
+
+  .flex-fixed {
+    flex: 0 0 auto;
+  }
+
+  .col-sm-6 {
+    @include col-width(6);
+  }
+
+  .col-sm-8 {
+    @include col-width(8);
+  }
+
+  .col-sm-12 {
+    @include col-width(12);
+  }
+
+  .no-sm-wrap {
+    flex-wrap: nowrap;
+  }
+
+  /* flex */
+
+  .flex-sm-column {
+    flex-direction: column;
+  }
+
+  .align-items-sm-start {
+    align-items: flex-start;
+  }
+
+  // txt
+
+  .text-sm-start {
+    text-align: left;
+  }
+}

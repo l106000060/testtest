@@ -1,0 +1,156 @@
+// Font Family
+
+$font-family: "Noto Sans", sans-serif;
+
+// Font Size
+
+$fs-d1: 4rem; // 64px
+$fs-d2: 3rem; // 48px
+$fs-h1: 2.5rem; // 40px
+$fs-h2: 2rem; // 32px
+$fs-h3: 1.75rem; // 28px
+$fs-h4: 1.5rem; // 24px
+$fs-h5: 1.25rem; // 20px
+$fs-h6: 1rem; // 16px
+$fs-body-sm: 0.875rem; // 14px
+
+// Font Weight
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+// Line Height
+
+$lh-tight: 1.2;
+$lh-normal: 1.5;
+
+// Colors
+
+$primary-100: #f5fee7;
+$primary-200: #e8fec5;
+$primary-300: #c0fa73;
+$primary-400: #57a203;
+$primary-500: #477a11;
+$neutral-white: #ffffff;
+$neutral-100: #f8f9fa;
+$neutral-300: #dee2e6;
+$neutral-400: #dee2e6;
+$neutral-500: #adb5bd;
+$neutral-600: #6c757d;
+$neutral-700: #495057;
+$neutral-900: #212529;
+$danger-300: #d74f4f;
+
+// Radius
+
+$radius-sm: 0.25rem;
+
+// spacing
+
+// 基底單位（4px = 0.25rem）
+$space-unit: 0.25rem;
+
+$spacers: (
+  1: $space-unit * 1,
+  // 0.25rem = 4px
+  1-5: $space-unit * 1.5,
+  // 0.375rem = 6px
+  2-5: $space-unit * 2.5,
+  // 0.625rem = 10px
+  2: $space-unit * 2,
+  // 0.5rem = 8px
+  3: $space-unit * 3,
+  // 0.75rem = 12px
+  3-75: $space-unit * 3.75,
+  // 0.9735rem = 15px
+  4: $space-unit * 4,
+  // 1rem = 16px
+  5-5: $space-unit * 5.5,
+  // 1.375rem = 22px
+  6: $space-unit * 6,
+  // 1.5rem = 24px
+  8: $space-unit * 8,
+  // 2rem = 32px
+  9-4375: $space-unit * 9.375,
+  // 9.4375rem = 151px
+  10: $space-unit * 10,
+  // 2.5rem = 40px
+  11: $space-unit * 11,
+  // 2.75rem = 44px
+  12: $space-unit * 12,
+  // 3rem = 48px
+  15: $space-unit * 15,
+  // 3.75rem = 60px
+  15p5: $space-unit * 15.5,
+  // 3.75rem = 62px
+  16: $space-unit * 16,
+  // 4rem = 64px
+  16p375: $space-unit * 16.375,
+  // 4.09375rem = 65.5px
+  20: $space-unit * 20,
+  // 5rem = 80px
+  20p5: $space-unit * 20.5,
+  // 5rem = 82px
+  25: $space-unit * 25,
+  // 25rem = 100px
+  29.5: $space-unit * 29.5,
+  // 7.375rem = 118px
+  30: $space-unit * 30,
+  // 7.375rem = 118px
+  34: $space-unit * 34,
+  // 7.375rem = 118px
+  37-75: $space-unit * 37.75,
+  // 9.4375rem = 151px
+  38-75: $space-unit * 38.75,
+  // 9.6875rem = 155px
+  50: $space-unit * 50,
+  // 12.5rem = 200px
+  72: $space-unit * 72
+    // 72rem = 288px,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+);
+
+// btn_map
+
+$btn-color: (
+  "neutral": (
+    "bg": $neutral-900,
+    "color": $neutral-white,
+    "hover": $neutral-700,
+    "focus": transparentize($neutral-900, 0.9),
+  ),
+  "primary": (
+    "bg": $primary-300,
+    "color": $neutral-900,
+    "hover": $primary-500,
+    "focus": transparentize($primary-300, 0.6),
+  ),
+  "neutral-outlined": (
+    "bg": $neutral-white,
+    "color": $neutral-900,
+    "hover": $neutral-500,
+    "hover-bg": $neutral-900,
+    "hover-color": $neutral-white,
+    "focus": transparentize($neutral-900, 0.9),
+  ),
+);
+
+// grid
+
+$gutter: 24px;
+
+$col-widths: (
+  1: 8.3333%,
+  2: 16.6667%,
+  3: 25%,
+  4: 33.3333%,
+  5: 41.6667%,
+  6: 50%,
+  7: 58.3333%,
+  8: 66.6667%,
+  9: 75%,
+  10: 83.3333%,
+  11: 91.6667%,
+  12: 100%,
+);

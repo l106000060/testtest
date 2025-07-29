@@ -1,0 +1,244 @@
+// spacing
+
+// margin
+
+@mixin margin($margin, $m-spacing) {
+  $m-value: map-get($spacers, $m-spacing);
+
+  // 單一方向 margin
+  @if $margin == mt and $m-value {
+    margin-top: $m-value;
+  }
+
+  @if $margin == mb and $m-value {
+    margin-bottom: $m-value;
+  }
+
+  @if $margin == ms and $m-value {
+    margin-left: $m-value; // Start
+  }
+
+  @if $margin == me and $m-value {
+    margin-right: $m-value; // End
+  }
+
+  // X 軸（左右）
+  @if $margin == mx and $m-value {
+    margin-left: $m-value;
+    margin-right: $m-value;
+  }
+
+  // Y 軸（上下）
+  @if $margin == my and $m-value {
+    margin-top: $m-value;
+    margin-bottom: $m-value;
+  }
+
+  // 全方向
+  @if $margin == m and $m-value {
+    margin: $m-value;
+  }
+}
+
+// padding
+
+@mixin padding($padding, $p-spacing) {
+  $p-value: map-get($spacers, $p-spacing);
+
+  @if $padding == pt and $p-value {
+    padding-top: $p-value;
+  }
+
+  @if $padding == pb and $p-value {
+    padding-bottom: $p-value;
+  }
+
+  @if $padding == ps and $p-value {
+    padding-left: $p-value; // Start
+  }
+
+  @if $padding == pe and $p-value {
+    padding-right: $p-value; // End
+  }
+
+  // X 軸（左右）
+  @if $padding == px and $p-value {
+    padding-left: $p-value;
+    padding-right: $p-value;
+  }
+
+  // Y 軸（上下）
+  @if $padding == py and $p-value {
+    padding-top: $p-value;
+    padding-bottom: $p-value;
+  }
+
+  // 全方向
+  @if $padding == p and $p-value {
+    padding: $p-value;
+  }
+}
+
+// font-style
+
+@mixin font-style(
+  $color: null,
+  $font-size: null,
+  $font-weight: null,
+  $line-height: null
+) {
+  @if $color != null {
+    color: $color;
+  }
+
+  @if $font-size != null {
+    font-size: $font-size;
+  }
+
+  @if $font-weight != null {
+    font-weight: $font-weight;
+  }
+
+  @if $line-height != null {
+    line-height: $line-height;
+  }
+}
+
+// btn-l 基本樣式
+
+@mixin btn-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $neutral-900;
+  border-radius: $radius-sm;
+  font-family: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  font-weight: $fw-medium;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+@mixin btn-l-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid $neutral-900;
+  border-radius: $radius-sm;
+  font-family: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  font-weight: $fw-medium;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+@mixin btn-l-base-neutral-300 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid $neutral-300;
+  border-radius: $radius-sm;
+  font-family: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  font-weight: $fw-medium;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+// btn-neutral-filled 按鈕樣式
+
+@mixin btn-neutral($type) {
+  $color: map-get($btn-color, $type);
+
+  background: map-get($color, "bg");
+  color: map-get($color, "color");
+  border: solid 1px transparent;
+
+  &:hover {
+    background: map-get($color, "hover");
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  &:focus {
+    outline: 3px solid map-get($color, "focus");
+  }
+}
+
+// btn-neutral-outlined 按鈕樣式
+
+@mixin btn-neutral-outlined($type) {
+  $color: map-get($btn-color, $type);
+
+  background: map-get($color, "bg");
+  color: map-get($color, "color");
+
+  &:hover {
+    background: map-get($color, "hover");
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  &:focus {
+    border: solid 1px $neutral-900;
+  }
+}
+
+@mixin btn-neutral-outlined-2($type) {
+  $color: map-get($btn-color, $type);
+
+  background: map-get($color, "bg");
+  color: map-get($color, "color");
+
+  &:hover {
+    background: map-get($color, "hover-bg");
+    color: map-get($color, "hover-color");
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  &:focus {
+    background: map-get($color, "hover-bg");
+    color: map-get($color, "hover-color");
+    border: solid 1px $neutral-900;
+  }
+}
+
+// btn-neutral-outlined-disabled 按鈕樣式
+
+@mixin btn-neutral-outlined-disabled($type) {
+  $color: map-get($btn-color, $type);
+
+  background: map-get($color, "bg");
+  color: map-get($color, "color");
+}
+
+// btn-primary
+
+@mixin btn-primary($type) {
+  $color: map-get($btn-color, $type);
+
+  background: map-get($color, "bg");
+  color: map-get($color, "color");
+
+  &:hover {
+    color: map-get($color, "hover");
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  &:focus {
+    outline: 3px solid map-get($color, "focus");
+  }
+}
+
+// grid
+
+// @mixin col-width($cols) {
+//   width: calc(#{map-get($col-widths, $cols)} - #{$gutter});
+// }
+
+@mixin col-width($cols) {
+  width: map-get($col-widths, $cols);
+}

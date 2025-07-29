@@ -1,0 +1,244 @@
+// spacing
+
+// margin
+
+.mb-1 {
+  @include margin(mb, 1);
+}
+
+.mb-2 {
+  @include margin(mb, 2);
+}
+
+.mb-3 {
+  @include margin(mb, 3);
+}
+
+.mb-4 {
+  @include margin(mb, 4);
+}
+
+.mb-6 {
+  @include margin(mb, 6);
+}
+
+.mb-8 {
+  @include margin(mb, 8);
+}
+
+.mb-10 {
+  @include margin(mb, 10);
+}
+
+.mb-12 {
+  @include margin(mb, 12);
+}
+
+.mb-15 {
+  @include margin(mb, 15);
+}
+
+.mb-16 {
+  @include margin(mb, 16);
+}
+
+.mb-21 {
+  @include margin(mb, 21);
+}
+
+.ms-50 {
+  @include margin(ms, 50);
+}
+
+.me-2 {
+  @include margin(me, 2);
+}
+
+.me-3 {
+  @include margin(me, 3);
+}
+
+.me-6 {
+  @include margin(me, 6);
+}
+
+.me-10 {
+  @include margin(me, 10);
+}
+
+.me-12 {
+  @include margin(me, 12);
+}
+
+.m-3 {
+  @include margin(m, 3);
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+// padding
+.pt-8 {
+  @include padding(pt, 8);
+}
+
+.pb-1 {
+  @include padding(pb, 1);
+}
+
+.pb-6 {
+  @include padding(pb, 6);
+}
+
+.ps-2 {
+  @include padding(ps, 2);
+}
+
+.ps-3 {
+  @include padding(ps, 3);
+}
+
+.ps-6 {
+  @include padding(ps, 6);
+}
+
+.pe-3 {
+  @include padding(pe, 3);
+}
+
+.pe-6 {
+  @include padding(pe, 6);
+}
+
+.px-1 {
+  @include padding(px, 1);
+}
+
+.px-2 {
+  @include padding(px, 2);
+}
+
+.px-2-5 {
+  @include padding(px, 2-5);
+}
+
+.px-3 {
+  @include padding(px, 3);
+}
+
+.px-3-75 {
+  @include padding(px, 3-75);
+}
+
+.px-6 {
+  @include padding(px, 6);
+}
+
+.px-8 {
+  @include padding(px, 8);
+}
+
+.px-11 {
+  @include padding(px, 11);
+}
+
+.px-15 {
+  @include padding(px, 15);
+}
+
+.px-15p5 {
+  @include padding(px, 15p5);
+}
+
+.px-16 {
+  @include padding(px, 16);
+}
+
+.px-16p375 {
+  @include padding(px, 16p375);
+}
+
+.px-20 {
+  @include padding(px, 20);
+}
+
+.px-30 {
+  @include padding(px, 30);
+}
+
+.px-34 {
+  @include padding(px, 34);
+}
+
+.py-2 {
+  @include padding(py, 2);
+}
+
+.py-3 {
+  @include padding(py, 3);
+}
+
+.py-4 {
+  @include padding(py, 4);
+}
+
+.py-6 {
+  @include padding(py, 6);
+}
+
+.py-8 {
+  @include padding(py, 8);
+}
+
+.py-9-4375 {
+  @include padding(py, 9.375);
+}
+
+.py-10 {
+  @include padding(py, 10);
+}
+
+.py-12 {
+  @include padding(py, 12);
+}
+
+.py-15 {
+  @include padding(py, 15);
+}
+
+.py-16 {
+  @include padding(py, 16);
+}
+
+.py-25 {
+  @include padding(py, 25);
+}
+
+.py-29-5 {
+  @include padding(py, 29.5);
+}
+
+.py-37-75 {
+  @include padding(py, 37-75);
+}
+
+.py-72 {
+  @include padding(py, 72);
+}
+
+.p-8 {
+  @include padding(p, 8);
+}
+
+.p-2-5 {
+  @include padding(p, 2-5);
+}
+
+.p-3 {
+  @include padding(p, 3);
+}
+
+.p-3-75 {
+  @include padding(p, 3-75);
+}

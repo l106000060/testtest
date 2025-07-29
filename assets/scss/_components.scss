@@ -1,0 +1,173 @@
+/* nav區塊 */
+
+.logo {
+  width: 129px;
+}
+
+.person:hover {
+  background: $primary-200;
+}
+
+.nav-item-link:hover {
+  color: $primary-500;
+}
+
+.nav-item-link:focus {
+  color: $primary-500;
+}
+
+// hero-header
+
+.hero-header {
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+// co-branding
+
+.co-branding {
+  background-image: url("../images/banner-co-branded.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+// mask
+
+.mask::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); // 遮罩顏色
+  z-index: 1;
+}
+
+.previous-level {
+  position: relative;
+  z-index: 2;
+}
+
+// urban-runner
+
+.urban-runner {
+  background-image: url("../images/product-6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+
+.street-mode {
+  background-image: url("../images/product-11.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+
+.chunk-district {
+  background-image: url("../images/product-9.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+
+.collab-zone {
+  background-image: url("../images/product-10.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+
+.overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* btn */
+
+.btn-base {
+  @include btn-base;
+}
+
+.btn-l {
+  @include btn-l-base;
+}
+
+.btn-l-base-neutral-300 {
+  @include btn-l-base-neutral-300;
+}
+
+.btn-neutral-filled {
+  @include btn-neutral(neutral);
+}
+
+.btn-neutral-outlined {
+  @include btn-neutral-outlined(neutral-outlined);
+}
+
+.btn-neutral-outlined-2 {
+  @include btn-neutral-outlined-2(neutral-outlined);
+}
+
+.btn-neutral-outlined-disabled {
+  @include btn-neutral-outlined-disabled(neutral-outlined);
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.btn-primary {
+  @include btn-primary(primary);
+}
+
+// circle pagination
+
+.capsule {
+  width: 1.5rem;
+  height: 0.5rem;
+  border-radius: 0.75rem;
+  background: $neutral-600;
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  background: $primary-400;
+}
+
+// hover
+
+.hover-primary-300:hover {
+  background: $primary-300;
+}
+
+.hover-primary-300:focus {
+  background: $primary-300;
+}
+
+.hover-primary-400:hover {
+  color: $primary-400;
+}
+
+.hover-primary-400:focus {
+  color: $primary-400;
+}
+
+.story-item-txt:hover {
+  color: blue;
+  border-bottom: 1px solid blue;
+}
